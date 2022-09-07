@@ -14,10 +14,14 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <Cyber />
-        <div className='footer'>
-            <a href="https://github.com/inphoenix" target='_blank'>inPhoenix Github</a>
-        </div>
+      <div className="cyber">
+        <Cyber />
+      </div>
+      <div className="footer">
+        <a href="https://github.com/inphoenix" target="_blank">
+          inPhoenix Github
+        </a>
+      </div>
     </div>
   );
 }
