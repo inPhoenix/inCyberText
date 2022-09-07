@@ -10,7 +10,8 @@
 
 ### The stack
 
-- [x] Arwes
+- [x] [Arwes](https://arwes.dev/)
 - [x] React 18
-- [ ] Typescript [Not Supported for Arwes]
+- [ ] Typescript [Not Supported by Arwes]
+
 

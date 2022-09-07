@@ -18,12 +18,12 @@ function App() {
         <Cyber />
       </div>
       <div className="footer">
-        <a href="https://github.com/inphoenix" target="_blank">
+        <a id="link" href="https://github.com/inphoenix" target="_blank">
           inPhoenix Github
         </a>
       </div>
     </div>
-  );
+  )
 }
 
 export default App;

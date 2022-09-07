@@ -9,14 +9,23 @@
 
 .cyber {
   display: block;
-  margin: 0 auto;
-  width: 50%;
-;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
+@media only screen and (max-width: 800px) {
+  .cyber {
+    width: 100%;
+  }
+}
+
 .footer {
   align-self: center;
   flex-direction: column;
   align-items: flex-end;
+}
+#link {
+  color: #9606a6 !important;
 }
 
 .form-control {
@@ -35,29 +44,4 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
