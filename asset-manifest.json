@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/inCyberText/static/css/main.a3c8f876.css",
-    "main.js": "/inCyberText/static/js/main.3ff85217.js",
+    "main.js": "/inCyberText/static/js/main.2864e739.js",
     "static/js/787.535a0f16.chunk.js": "/inCyberText/static/js/787.535a0f16.chunk.js",
     "index.html": "/inCyberText/index.html",
     "main.a3c8f876.css.map": "/inCyberText/static/css/main.a3c8f876.css.map",
-    "main.3ff85217.js.map": "/inCyberText/static/js/main.3ff85217.js.map",
+    "main.2864e739.js.map": "/inCyberText/static/js/main.2864e739.js.map",
     "787.535a0f16.chunk.js.map": "/inCyberText/static/js/787.535a0f16.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a3c8f876.css",
-    "static/js/main.3ff85217.js"
+    "static/js/main.2864e739.js"
   ]
 }
