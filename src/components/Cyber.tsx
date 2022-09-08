@@ -54,8 +54,12 @@ const Cyber = () => {
     const encodedText = luni.tools.creepify.encode(value)
     setCodedText(encodedText)
   }
-
-  const duration = { enter: 500, exit: 500 }
+  const handleOnKeyDown = (e) => {
+    if (e.keyCode === 13) {
+      const encodedText = luni.tools.creepify.encode(value)
+      setCodedText(encodedText)
+    }
+  }
 
   return (
     <ArwesThemeProvider>
@@ -84,17 +88,17 @@ const Cyber = () => {
           >
             <div style={{ position: "relative" }}>
               <input
-                // className={"form-control"}
-                id="fname"
+                id="cyberInput"
                 value={value}
                 onChange={(e) => handleChange(e)}
+                onKeyDown={handleOnKeyDown}
                 placeholder="Type here"
                 type="text"
               />
             </div>
           </Card>
           <div className="cyberResult">
-          {codedText && <Results codedText={codedText} />}
+            {codedText && <Results codedText={codedText} />}
           </div>
         </AnimatorGeneralProvider>
       </BleepsProvider>
