@@ -7,6 +7,16 @@
   justify-content: space-between;
 }
 
+.cyberResult {
+  margin-top: 10%;
+}
+
+@media only screen and (min-height: 800px) {
+  .cyberResult {
+    margin-top: 20%;
+  }
+}
+
 .cyber {
   display: block;
   margin-left: auto;
@@ -19,29 +29,45 @@
   }
 }
 
+.copyClipboard {
+  margin-top: 15px;
+}
+
+@media only screen and (min-height: 800px) {
+  .copyClipboard {
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .arwes-card__picture {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .cyber {
+    width: 50%;
+  }
+}
+
 .footer {
   align-self: center;
   flex-direction: column;
   align-items: flex-end;
+  margin-bottom: 10px;
 }
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    margin-bottom: 20px;
+  }
+}
+
 #link {
   color: #9606a6 !important;
 }
 
-.form-control {
-  border: 1px solid red;
-  z-index: 999999;
-}
 .buttonContainer {
-  margin-top: 60px;
-}
-.form-control.input {
-  border: 1px solid #bb00ff;
-  z-index: 999999;
-}
-.room {
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin-top: 65px;
 }

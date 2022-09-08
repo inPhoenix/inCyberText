@@ -1,7 +1,5 @@
 // @ts-nocheck
-
 import React, { useEffect } from "react"
-
 import {
   ArwesThemeProvider,
   Button,
@@ -11,7 +9,8 @@ import {
 } from "@arwes/core"
 import { BleepsProvider } from "@arwes/sounds"
 import { AnimatorGeneralProvider } from "@arwes/animation"
-import Lunicode from "./utils/lunicode"
+import Lunicode from "../utils/lunicode"
+import Results from "./Results"
 const ASSETS = `${process.env.PUBLIC_URL}/assets/`
 const FONT_FAMILY_ROOT = '"Titillium Web", sans-serif'
 const IMAGE_URL = ASSETS + "cyberWall.png"
@@ -37,7 +36,6 @@ const bleepsSettings = {
 
 const Cyber = () => {
   const [activate, setActivate] = React.useState(true)
-  const [activate2, setActivate2] = React.useState(false)
   const [value, setValue] = React.useState("")
   const [codedText, setCodedText] = React.useState("")
   const animatorGeneral = { duration: { enter: 200, exit: 200 } }
@@ -95,22 +93,9 @@ const Cyber = () => {
               />
             </div>
           </Card>
-          {codedText && (
-            <div className="room">
-              <Text animator={{ duration,
-              }}>{codedText}</Text>
-              <div className="buttonContainer">
-                <Button
-                  animator={{ activate2 }}
-                  onClick={() => {
-                    navigator.clipboard.writeText(codedText)
-                  }}
-                >
-                  <Text>Copy to Clipboard</Text>
-                </Button>
-              </div>
-            </div>
-          )}
+          <div className="cyberResult">
+          {codedText && <Results codedText={codedText} />}
+          </div>
         </AnimatorGeneralProvider>
       </BleepsProvider>
     </ArwesThemeProvider>
